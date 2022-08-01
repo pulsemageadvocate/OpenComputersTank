@@ -23,7 +23,8 @@ GTNH環境用ですがQuantum Tankがあれば使えるはず。
 ## 準備
 コンピュータにはOpenOSをインストールしておきます。  
 コンピュータにTransposerを接続します。  
-Transposerに隣接するようにTank（複数可）とInterface（1つでよい）を配置します。  
+Transposerに隣接するようにTank（複数可）とInterface（Transposer毎に1つでよい）を配置します。  
+![20220801_5](https://user-images.githubusercontent.com/59131259/182178275-5053192a-ca1c-412c-ae8f-453bd8d7961c.jpg)  
 Interfaceには移し替える時に必要な空セル、液体入りセルをそれぞれ1つずつ補充されるように設定します。  
 ![20220801_2](https://user-images.githubusercontent.com/59131259/182164698-cb11b4d8-9eba-4690-a621-124967e9e353.jpg)  
 一番右は使用済みセル返却に使うので空けておいてください。  
@@ -31,21 +32,21 @@ Interfaceには移し替える時に必要な空セル、液体入りセルを�
 次のコマンドでエディタを開きます。
 > edit tank.lua
 
-GitHubからtank.luaの内容をコピーして、マウス中ボタンクリックでゲーム内に貼り付けします。
+GitHubからtank.luaの内容をコピーして、マウス中ボタンクリックでゲーム内に貼り付けします。  
 Ctrl+Sを押して保存、Ctrl+Wで終了。  
 ![20220801_3](https://user-images.githubusercontent.com/59131259/182164979-84041567-9069-4fac-97ea-2cd0d3779079.jpg)
 
 transposer.txtをエディタを開いて、タンクの数だけ行を追加します。
 > edit transposer.txt
 
-> Transposerのアドレス,液体量下限(*),上限(*),Transposerから見てタンクのある方角,Interfaceのある方角,Interface内の空セルのスロット番号(1-8),中身入りセルのスロット番号(1-8)
+> Transposerのアドレス,液体量下限(\*),上限(\*),Transposerから見てタンクのある方角,Interfaceのある方角,Interface内の空セルのスロット番号(1-8),中身入りセルのスロット番号(1-8)
 
-(*)液体量下限より少なくなったら中身入りセル投入、上限より多くなったら空セル投入します。
+(\*)液体量下限より少なくなったら中身入りセル投入、上限より多くなったら空セル投入します。
 ![20220801_4](https://user-images.githubusercontent.com/59131259/182165049-ba8216cf-6e9c-4230-a29c-231178c5c7b1.jpg)  
 Ctrl+Sを押して保存、Ctrl+Wで終了。  
 
 ### アドレスの指定方法
-Analyzerを手に持った状態でCtrl+右クリックするとクリップボードにコピーします。マウス中ボタンクリックでゲーム内に貼り付けします。  
+Analyzerを手に持った状態でTransposerをCtrl+右クリックするとクリップボードにコピーします。マウス中ボタンクリックでゲーム内に貼り付けします。  
 
 ### 方角
 bottom,top,north,south,west,east  
