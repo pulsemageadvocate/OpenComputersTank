@@ -26,7 +26,7 @@ GTNH環境用ですがQuantum Tankがあれば使えるはず。
 Transposerに隣接するようにTank（複数可）とInterface（Transposer毎に1つでよい）を配置します。  
 ![20220801_5](https://user-images.githubusercontent.com/59131259/182178275-5053192a-ca1c-412c-ae8f-453bd8d7961c.jpg)  
 Interfaceには移し替える時に必要な空セル、液体入りセルをそれぞれ1つずつ補充されるように設定します。  
-![20220801_2](https://user-images.githubusercontent.com/59131259/182164698-cb11b4d8-9eba-4690-a621-124967e9e353.jpg)  
+![20220802_3](https://user-images.githubusercontent.com/59131259/182388805-a59fd60c-9ea5-4121-8bc9-cfd7f3686935.jpg)  
 一番右は使用済みセル返却に使うので空けておいてください。  
 
 次のコマンドでエディタを開きます。
@@ -34,7 +34,7 @@ Interfaceには移し替える時に必要な空セル、液体入りセルを�
 
 GitHubからtank.luaの内容をコピーして、マウス中ボタンクリックでゲーム内に貼り付けします。  
 Ctrl+Sを押して保存、Ctrl+Wで終了。  
-![20220801_3](https://user-images.githubusercontent.com/59131259/182164979-84041567-9069-4fac-97ea-2cd0d3779079.jpg)
+![20220802_1](https://user-images.githubusercontent.com/59131259/182387173-fbcc5dd5-5e15-4d46-8200-7c7c346b30e9.jpg)  
 
 transposer.txtをエディタを開いて、タンクの数だけ行を追加します。
 > edit transposer.txt
@@ -42,7 +42,7 @@ transposer.txtをエディタを開いて、タンクの数だけ行を追加し
 > Transposerのアドレス,液体量下限(\*),上限(\*),Transposerから見てタンクのある方角,Interfaceのある方角,Interface内の空セルのスロット番号(1-8),中身入りセルのスロット番号(1-8)
 
 (\*)液体量下限より少なくなったら中身入りセル投入、上限より多くなったら空セル投入します。
-![20220801_4](https://user-images.githubusercontent.com/59131259/182165049-ba8216cf-6e9c-4230-a29c-231178c5c7b1.jpg)  
+![20220802_2](https://user-images.githubusercontent.com/59131259/182387304-620f3424-fbb8-47c6-aa96-b1b592064f59.jpg)  
 Ctrl+Sを押して保存、Ctrl+Wで終了。  
 
 ### アドレスの指定方法
@@ -58,7 +58,7 @@ bottom,top,north,south,west,east
 正常に実行した場合、count=(タンク数)と表示されます。  
 終了するにはCtrl+Alt+Cを押してください。  
 
-## FAQ
+## トラブルシューティング
 ### 液体入りセルがまだ無いんですけど
 とりあえず無くても動きます。補充できないだけ。
 ### Too many components connected to the computer.と表示される
